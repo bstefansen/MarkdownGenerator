@@ -1,5 +1,5 @@
 import React from 'react';
-import marked from 'marked';
+import marked from 'marked'
 import './App.css';
 
 marked.setOptions({
@@ -7,11 +7,8 @@ marked.setOptions({
 });
 
 const renderer = new marked.Renderer();
-renderer.link = function (href, title, text) {
-  return `<a target="_blank" href="${href}">${text}` + '</a>';
-}
 
-class MyApp extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -109,4 +106,4 @@ You can add an Image:
 ![React Logo w/ Text](https://s.pngkit.com/png/small/80-803371_javascript-logo-number-angularjs-node-javascript-logo.png)
 `
 
-export default MyApp;
+export default App;
