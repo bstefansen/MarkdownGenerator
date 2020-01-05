@@ -80,28 +80,29 @@ const Preview = (props) => {
 }
 
 const placeholder =
-`# h1 Heading
-## h2 Heading
+`# Welcome!
+## This is the react markdown generator
 
-[Here is a link to google](https://www.google.com)
+[Click here to see the code](https://github.com/bstefansen/MarkdownGenerator)
 
-\`<div>Here is a single line code block</div>\`
+ ### Here is an example code block from the project:
 
 \`\`\`
-CodeBlock
-With multiple
-lines
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      markdown: placeholder
+    };
+   this.handleChange = this.handleChange.bind(this);
+ };
 \`\`\`
 
-> 'Block Quotes!'
+You can also insert list items:
 
-- Here is a list item
 
-1. Here is a numbered list item
 
-**You can have bold text**
-
-You can add an Image:
+**You can also have bold text** and images:
 
 ![React Logo w/ Text](https://s.pngkit.com/png/small/80-803371_javascript-logo-number-angularjs-node-javascript-logo.png)
 `
